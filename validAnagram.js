@@ -35,3 +35,12 @@ var isAnagram = function(s, t) {
 
 console.log(isAnagram("anagram", "nagaram"));
 console.log(isAnagram("rat", "car"));
+
+var assert = require('assert');
+describe('Anagram', function(){
+    describe('Valid Anagram', function(){
+        it('should return true or false', function(){
+            assert.equal(isAnagram("anagram", "nagaram"), [true,false]);
+        });
+    });
+});
